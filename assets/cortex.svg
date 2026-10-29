@@ -26,11 +26,12 @@
     <rect class="box" x="24.5" y="40.5" width="272" height="208"/>
     <rect x="36" y="32" width="78" height="16" fill="#0c0f0e"/>
     <text class="lbl" x="44" y="44">YOU ASK</text>
-    <text x="40" y="84"><tspan class="acc">&gt; </tspan>how do I make a good svg?</text>
-    <text x="40" y="116"><tspan class="acc">&gt; </tspan>add https://…/article</text>
-    <text x="40" y="148"><tspan class="acc">&gt; </tspan>research toddler tantrums</text>
-    <text x="40" y="180"><tspan class="acc">&gt; </tspan>what's new in ai?</text>
-    <text x="40" y="212"><tspan class="acc">&gt; </tspan>check the wiki</text>
+    <text x="40" y="80"><tspan class="acc">&gt; </tspan>how do I make a good svg?</text>
+    <text x="40" y="108"><tspan class="acc">&gt; </tspan>add https://…/article</text>
+    <text x="40" y="136"><tspan class="acc">&gt; </tspan>add ~/Desktop/report.pdf</text>
+    <text x="40" y="164"><tspan class="acc">&gt; </tspan>research toddler tantrums</text>
+    <text x="40" y="192"><tspan class="acc">&gt; </tspan>what's new in ai?</text>
+    <text x="40" y="220"><tspan class="acc">&gt; </tspan>check the wiki</text>
   </g>
 
   <!-- agent -->
