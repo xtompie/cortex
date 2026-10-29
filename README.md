@@ -65,6 +65,8 @@ Manual install:
 git clone https://github.com/xtompie/cortex.git ~/cortex
 ```
 
+Or click **Use this template** on GitHub to get your own copy without this repo's history.
+
 ## Use
 
 Inside the folder:
