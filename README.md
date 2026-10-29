@@ -37,7 +37,7 @@ It follows Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf
 | You say | The agent |
 |---|---|
 | "How do I …?" / "What do I know about …?" | answers from the wiki, offers research if something is missing |
-| "Add this: `<url or file>`" | reads it and merges new knowledge into pages |
+| "Add `https://example.com/article`" or "Add `~/Desktop/report.pdf`" | reads the link or the file from your disk and merges new knowledge into pages |
 | "Research X" | searches the web, rates sources, writes pages |
 | "What's new in X?" | checks the topic's sources since the last check |
 | "Check the wiki" | fixes broken links and reports stale or conflicting pages |
