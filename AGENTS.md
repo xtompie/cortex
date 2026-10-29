@@ -14,6 +14,7 @@ Knowledge is compiled once and kept current — not re-derived on every question
 ## Layout
 
 ```
+README.md, INSTALL.md, assets/   repo docs for humans and installing agents — not wiki content
 index.md              list of topics, one line each
 <topic>/              one folder = one independent wiki (design, llm, psychology, ...)
   index.md            catalog of pages in this topic

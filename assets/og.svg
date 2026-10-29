@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Cortex. Personal knowledge base maintained by an LLM agent. A topic-based LLM wiki, Karpathy pattern.">
+  <style>text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }</style>
+  <rect width="1280" height="640" fill="#0c0f0e"/>
+  <g transform="translate(90 170) scale(3.125)"><rect x="16" y="13" width="64" height="10" fill="#eef2f0"/><rect x="16" y="25" width="64" height="10" fill="#b3bdb8"/><rect x="16" y="37" width="22" height="10" fill="#a3c4b5"/><rect x="16" y="49" width="22" height="10" fill="#a3c4b5"/><rect x="16" y="61" width="64" height="10" fill="#5d6a65"/><rect x="16" y="73" width="64" height="10" fill="#3b4643"/></g>
+  <text x="470" y="250" font-size="96" fill="#eef2f0" letter-spacing="2">cortex</text>
+  <text x="470" y="318" font-size="28" fill="#b3bdb8">Personal knowledge base maintained</text>
+  <text x="470" y="358" font-size="28" fill="#b3bdb8">by an LLM agent.</text>
+  <text x="470" y="398" font-size="28" fill="#b3bdb8">A topic-based LLM wiki, Karpathy pattern.</text>
+  <text x="470" y="470" font-size="24" fill="#5d6a65">github.com/xtompie/cortex</text>
+</svg>

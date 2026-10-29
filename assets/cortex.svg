@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 392" width="960" height="392" role="img" aria-labelledby="t d">
+  <title id="t">How Cortex works</title>
+  <desc id="d">You ask an AI agent in plain language. The agent follows AGENTS.md, answers from topic folders in Cortex, researches the web when knowledge is missing, and writes new pages back into Cortex.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 z" fill="#a3c4b5"/>
+    </marker>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; fill: #b3bdb8; }
+      .lbl { font-size: 12px; fill: #5d6a65; letter-spacing: 1.5px; }
+      .dim { fill: #5d6a65; }
+      .off { fill: #3b4643; }
+      .hi { fill: #eef2f0; }
+      .acc { fill: #a3c4b5; }
+      .sm { font-size: 12px; }
+      .xs { font-size: 11px; }
+      .box { fill: none; stroke: #1f2725; stroke-width: 1; }
+      .wire { stroke: #a3c4b5; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="960" height="392" fill="#0c0f0e"/>
+
+  <!-- you ask -->
+  <g id="you">
+    <rect class="box" x="24.5" y="40.5" width="272" height="208"/>
+    <rect x="36" y="32" width="78" height="16" fill="#0c0f0e"/>
+    <text class="lbl" x="44" y="44">YOU ASK</text>
+    <text x="40" y="84"><tspan class="acc">&gt; </tspan>how do I make a good svg?</text>
+    <text x="40" y="116"><tspan class="acc">&gt; </tspan>add https://…/article</text>
+    <text x="40" y="148"><tspan class="acc">&gt; </tspan>research toddler tantrums</text>
+    <text x="40" y="180"><tspan class="acc">&gt; </tspan>what's new in ai?</text>
+    <text x="40" y="212"><tspan class="acc">&gt; </tspan>check the wiki</text>
+  </g>
+
+  <!-- agent -->
+  <g id="agent">
+    <rect class="box" x="344.5" y="40.5" width="272" height="208"/>
+    <rect x="356" y="32" width="62" height="16" fill="#0c0f0e"/>
+    <text class="lbl" x="364" y="44">AGENT</text>
+    <text class="dim sm" x="360" y="80">claude code · codex · cursor</text>
+    <text x="360" y="104">follows <tspan class="hi">AGENTS.md</tspan></text>
+    <text class="sm" x="360" y="140"><tspan class="hi">query</tspan><tspan class="dim" x="440">answer + sources</tspan></text>
+    <text class="sm" x="360" y="160"><tspan class="hi">add</tspan><tspan class="dim" x="440">merge into pages</tspan></text>
+    <text class="sm" x="360" y="180"><tspan class="hi">research</tspan><tspan class="dim" x="440">web → rated pages</tspan></text>
+    <text class="sm" x="360" y="200"><tspan class="hi">discover</tspan><tspan class="dim" x="440">new since last check</tspan></text>
+    <text class="sm" x="360" y="220"><tspan class="hi">lint</tspan><tspan class="dim" x="440">fix links, flag stale</tspan></text>
+  </g>
+
+  <!-- cortex -->
+  <g id="cortex">
+    <rect class="box" x="664.5" y="40.5" width="272" height="208"/>
+    <rect x="676" y="32" width="70" height="16" fill="#0c0f0e"/>
+    <text class="lbl" x="684" y="44">CORTEX</text>
+    <text class="hi" x="680" y="84">cortex/</text>
+    <text class="xs off" x="920" y="84" text-anchor="end">PAGES</text>
+    <text x="680" y="108"><tspan class="off">├─ </tspan>design/</text>
+    <text class="dim" x="920" y="108" text-anchor="end">16</text>
+    <text x="680" y="132"><tspan class="off">├─ </tspan>ai-news/</text>
+    <text class="dim" x="920" y="132" text-anchor="end">12</text>
+    <text x="680" y="156"><tspan class="off">├─ </tspan>agentic-engineering/</text>
+    <text class="dim" x="920" y="156" text-anchor="end">13</text>
+    <text class="acc" x="680" y="180"><tspan class="off">└─ </tspan>psychology/</text>
+    <text class="acc" x="920" y="180" text-anchor="end">new</text>
+    <text class="dim sm" x="680" y="212">one folder = one wiki</text>
+    <text class="dim sm" x="680" y="232">markdown · git · obsidian</text>
+  </g>
+
+  <!-- wires you <-> agent -->
+  <line class="wire" x1="297" y1="120.5" x2="343" y2="120.5" marker-end="url(#arr)"/>
+  <line class="wire" x1="343" y1="176.5" x2="297" y2="176.5" marker-end="url(#arr)"/>
+  <text class="xs dim" x="320" y="112" text-anchor="middle">ask</text>
+  <text class="xs dim" x="320" y="168" text-anchor="middle">reply</text>
+
+  <!-- wires agent <-> cortex -->
+  <line class="wire" x1="617" y1="120.5" x2="663" y2="120.5" marker-end="url(#arr)"/>
+  <line class="wire" x1="663" y1="176.5" x2="617" y2="176.5" marker-end="url(#arr)"/>
+  <text class="xs dim" x="640" y="112" text-anchor="middle">write</text>
+  <text class="xs dim" x="640" y="168" text-anchor="middle">read</text>
+
+  <!-- web -->
+  <g id="web">
+    <rect class="box" x="344.5" y="304.5" width="272" height="64"/>
+    <rect x="356" y="296" width="48" height="16" fill="#0c0f0e"/>
+    <text class="lbl" x="364" y="308">WEB</text>
+    <text class="sm" x="360" y="344">docs · papers · repos · feeds</text>
+  </g>
+  <line class="wire" x1="480.5" y1="303" x2="480.5" y2="250" marker-end="url(#arr)"/>
+  <text class="xs dim" x="492" y="280">research · discover</text>
+
+  <!-- footer -->
+  <text class="sm dim" x="40" y="332">knowledge compiled once,</text>
+  <text class="sm dim" x="40" y="352">reused on every question.</text>
+  <text class="sm off" x="920" y="352" text-anchor="end">llm wiki pattern</text>
+</svg>
